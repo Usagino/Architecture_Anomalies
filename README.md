@@ -22,4 +22,4 @@ Language, software, service used
 - Github
 
 ## pageURL
-<a href="https://usagino.github.io/feature_is_STANDART.github.io/" target="_blank">feature is STANDART</a>
+<a href="https://usagino.github.io/Architecture_Anomalies.github.io/" target="_blank">Architecture_Anomalies</a>
