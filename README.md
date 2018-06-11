@@ -1,7 +1,10 @@
 # Architecture_Anomalies
-
 under construction
-
-## Assignment
 ---
+## Assignment
+
+
+
+
+
 this is kawaguchi's assignment
