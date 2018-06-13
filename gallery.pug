@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+      
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet" href="stylesheet/reset.css")
+        link(rel="stylesheet" href="stylesheet/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet")
+        title Architectures　Anomalies
+    body
+      div.image_carousel
+        div.carousel_1
+          div.carousel_1_A
+            - var n = 0;
+            while n < 3
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+          div.carousel_1_B
+            - var n = 0;
+            while n < 3
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+        div.carousel_2
+          div.carousel_2_A
+            - var n = 3;
+            while n < 6
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+          div.carousel_2_B
+            - var n = 3;
+            while n < 6
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+        div.carousel_3
+          div.carousel_3_A
+            - var n = 6;
+            while n < 9
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+          div.carousel_3_B
+            - var n = 6;
+            while n < 9
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+        div.carousel_4
+          div.carousel_4_A
+            - var n = 0;
+            while n < 3
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+          div.carousel_4_B
+            - var n = 0;
+            while n < 3
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+        div.carousel_5
+          div.carousel_5_A
+            - var n = 4;
+            while n < 6
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+          div.carousel_5_B
+            - var n = 4;
+            while n < 6
+              - var n = 1 + n;
+              div
+                img(src="material/works_"+n+".jpg")
+        
+      script(type="text/javascript" src="script/jquery-3.3.1.min.js")
+      script(type="text/javascript" src="script/script.js")
