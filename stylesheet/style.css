@@ -7,7 +7,7 @@
 .carousel_1_A {
   position: absolute;
   left: -310px;
-  animation: trans_1_down 20s linear 0s infinite;
+  animation: trans_1_down 40s linear 0s infinite;
 }
 
 .carousel_1_A img {
@@ -22,7 +22,7 @@
   top: 100vh;
   position: absolute;
   left: -310px;
-  animation: trans_1_down 20s linear 10s infinite;
+  animation: trans_1_down 40s linear 20s infinite;
 }
 
 .carousel_1_B img {
@@ -36,7 +36,7 @@
 .carousel_2_A {
   position: absolute;
   left: 100px;
-  animation: trans_2_up 20s linear 0s infinite;
+  animation: trans_2_up 40s linear 0s infinite;
 }
 
 .carousel_2_A img {
@@ -51,7 +51,7 @@
   top: 100vh;
   position: absolute;
   left: 100px;
-  animation: trans_2_up 20s linear 10s infinite;
+  animation: trans_2_up 40s linear 20s infinite;
 }
 
 .carousel_2_B img {
@@ -65,7 +65,7 @@
 .carousel_3_A {
   position: absolute;
   left: 510px;
-  animation: trans_3_down 20s linear 0s infinite;
+  animation: trans_3_down 40s linear 0s infinite;
 }
 
 .carousel_3_A img {
@@ -80,7 +80,7 @@
   top: 100vh;
   position: absolute;
   left: 510px;
-  animation: trans_3_down 20s linear 10s infinite;
+  animation: trans_3_down 40s linear 20s infinite;
 }
 
 .carousel_3_B img {
@@ -94,7 +94,7 @@
 .carousel_4_A {
   position: absolute;
   left: 920px;
-  animation: trans_4_up 20s linear 0s infinite;
+  animation: trans_4_up 40s linear 0s infinite;
 }
 
 .carousel_4_A img {
@@ -109,7 +109,7 @@
   top: 100vh;
   position: absolute;
   left: 920px;
-  animation: trans_4_up 20s linear 10s infinite;
+  animation: trans_4_up 40s linear 20s infinite;
 }
 
 .carousel_4_B img {
@@ -123,7 +123,7 @@
 .carousel_5_A {
   position: absolute;
   left: 1330px;
-  animation: trans_5_down 20s linear 0s infinite;
+  animation: trans_5_down 40s linear 0s infinite;
 }
 
 .carousel_5_A img {
@@ -138,7 +138,7 @@
   top: 100vh;
   position: absolute;
   left: 1330px;
-  animation: trans_5_down 20s linear 10s infinite;
+  animation: trans_5_down 40s linear 20s infinite;
 }
 
 .carousel_5_B img {
