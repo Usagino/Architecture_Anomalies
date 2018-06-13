@@ -48,9 +48,6 @@ $left:-310px;
 $sizelist: 1070.35, 1448, 811, 1070.35, 1183;
 $tran_how_many_time:1;
 @each $size in $sizelist{
-
-
-
   @keyframes trans_#{$tran_how_many_time}_up{
     0%{
       top: 100vh;
