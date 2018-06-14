@@ -2,12 +2,16 @@ html {
   transform: translate3d(0, 0, 0);
 }
 
+header {
+  position: relative;
+}
+
 header #header {
   will-change: transform;
   background-image: url(../material/bg_image.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 65%;
+  background-size: 100% auto;
+  background-position: 50% 70%;
   width: 100vw;
   height: 100vh;
   -webkit-filter: blur(0);
@@ -47,11 +51,34 @@ header .title:before {
   margin: 0 auto;
   display: inline-block;
   width: 0;
-  transition: 2s;
   content: "";
   height: 1px;
   background-color: #525252;
   animation: title_underline 2s ease 4.5s forwards;
+}
+
+header .navwrap {
+  position: absolute;
+  height: 4em;
+  width: 95vw;
+  background-color: white;
+  z-index: 3;
+  bottom: -95vh;
+  left: 0;
+  opacity: 0;
+  animation: navopacty 0.1s ease 7.3s forwards;
+}
+
+header .navber {
+  animation: navanime_left 4s ease 5.5s forwards;
+  position: absolute;
+  content: "";
+  z-index: 5;
+  background-color: black;
+  height: 4em;
+  width: 100vw;
+  left: 100vw;
+  bottom: -95vh;
 }
 
 @keyframes title_anime {
@@ -82,6 +109,27 @@ header .title:before {
   100% {
     -webkit-filter: blur(5px);
     filter: blur(5px);
+  }
+}
+
+@keyframes navanime_left {
+  0% {
+    left: 100vw;
+  }
+  50% {
+    left: 0vw;
+  }
+  100% {
+    left: -100vw;
+  }
+}
+
+@keyframes navopacty {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
