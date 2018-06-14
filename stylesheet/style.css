@@ -10,11 +10,11 @@ header #header {
   background-position: 50% 65%;
   width: 100vw;
   height: 100vh;
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
+  -webkit-filter: blur(0);
+  filter: blur(0);
   position: absolute;
   z-index: -1;
-  animation: header_blur 1s ease 0s forwards;
+  animation: header_blur 1.5s ease 0.5s forwards;
 }
 
 header .title {
@@ -22,7 +22,7 @@ header .title {
   position: absolute;
   z-index: 1;
   display: inline-block;
-  font-size: 3vw;
+  font-size: 180%;
   opacity: 0;
   position: absolute;
   top: 45%;
@@ -34,7 +34,7 @@ header .title {
   text-align: center;
   color: #525252;
   text-shadow: 5px 5px 2px rgba(101, 101, 101, 0.35);
-  animation: title_anime 2s ease 1s forwards;
+  animation: title_anime 2s ease 2.5s forwards;
   letter-spacing: 1em;
   opacity: 0;
 }
@@ -43,9 +43,6 @@ header .title {
   0% {
     opacity: 0;
     letter-spacing: 1em;
-  }
-  15% {
-    opacity: 1;
   }
   100% {
     letter-spacing: 0.2em;
