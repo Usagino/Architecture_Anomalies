@@ -1,4 +1,5 @@
 @import "_variable.scss";
+$fontcolor:rgb(82, 82, 82);
 html{
   transform: translate3d(0,0,0);
 }
@@ -37,7 +38,7 @@ header{
     font-weight: 100;
 
     text-align: center;
-    color: rgb(82, 82, 82);
+    color: $fontcolor;
     text-shadow: 5px 5px 2px rgba(101, 101, 101, 0.35);
     animation: title_anime 2s ease #{$blur_anime_endtime + 1} forwards;
     letter-spacing: 1em;
@@ -53,7 +54,7 @@ header{
 
       content: "";
       height: 1px;
-      background-color: rgb(82, 82, 82);
+      background-color: $fontcolor;
       animation: title_underline 2s ease #{$blur_anime_endtime + 3} forwards;
     }
   }
@@ -73,10 +74,14 @@ header{
       }
       li{
         font-size: 25px;
-
         display: inline-block;
         margin: 13px 20px;
+        a{
+          color: $fontcolor;
+          &:hover{
 
+          }
+        }
       }
     }
   }

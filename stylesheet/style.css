@@ -79,6 +79,10 @@ header .navwrap nav li {
   margin: 13px 20px;
 }
 
+header .navwrap nav li a {
+  color: #525252;
+}
+
 header .navber {
   animation: navanime_left 4s ease 5.5s forwards;
   position: absolute;
