@@ -5,8 +5,10 @@ html{
 // index.pug---------------------------------------------------
 $blur_anime_endtime:1.5s;
 header{
+  font-family: 'Scheherazade', serif;
   position: relative;
   #header{
+
     will-change: transform;
     background-image: url(../material/bg_image.jpg);
     background-repeat: no-repeat;
@@ -33,7 +35,7 @@ header{
     right: 0;
     bottom: 0;
     font-weight: 100;
-    font-family: 'Scheherazade', serif;
+
     text-align: center;
     color: rgb(82, 82, 82);
     text-shadow: 5px 5px 2px rgba(101, 101, 101, 0.35);
@@ -65,6 +67,18 @@ header{
     left: 0;
     opacity: 0;
     animation: navopacty 0.1s ease #{$blur_anime_endtime + 5.8} forwards;
+    nav{
+      ul{
+        text-align: center;
+      }
+      li{
+        font-size: 25px;
+
+        display: inline-block;
+        margin: 13px 20px;
+
+      }
+    }
   }
   .navber{
     animation: navanime_left 4s  ease #{$blur_anime_endtime + 4} forwards;

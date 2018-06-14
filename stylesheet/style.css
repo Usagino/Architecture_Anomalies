@@ -3,6 +3,7 @@ html {
 }
 
 header {
+  font-family: 'Scheherazade', serif;
   position: relative;
 }
 
@@ -34,7 +35,6 @@ header .title {
   right: 0;
   bottom: 0;
   font-weight: 100;
-  font-family: 'Scheherazade', serif;
   text-align: center;
   color: #525252;
   text-shadow: 5px 5px 2px rgba(101, 101, 101, 0.35);
@@ -67,6 +67,16 @@ header .navwrap {
   left: 0;
   opacity: 0;
   animation: navopacty 0.1s ease 7.3s forwards;
+}
+
+header .navwrap nav ul {
+  text-align: center;
+}
+
+header .navwrap nav li {
+  font-size: 25px;
+  display: inline-block;
+  margin: 13px 20px;
 }
 
 header .navber {
