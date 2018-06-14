@@ -17,8 +17,8 @@ header{
     background-position:50% 70%;
     width: 100vw;
     height: 100vh;
-    -webkit-filter: blur(0);
-    filter: blur(0);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
     position: absolute;
     z-index: -1;
     animation: header_blur $blur_anime_endtime ease 0.5s forwards;
@@ -96,8 +96,6 @@ header{
     left:100vw;
     bottom: -95vh;
   }
-
-
 }
 
 
@@ -123,12 +121,13 @@ header{
 }
 @keyframes header_blur{
   0%{
-    -webkit-filter: blur(0);
-    filter: blur(0);
-  }
-  100%{
+
     -webkit-filter: blur(5px);
     filter: blur(5px);
+  }
+  100%{
+    -webkit-filter: blur(0);
+    filter: blur(0);
   }
 }
 @keyframes navanime_left{
