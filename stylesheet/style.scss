@@ -39,8 +39,24 @@ header{
     animation: title_anime 2s ease #{$blur_anime_endtime + 1} forwards;
     letter-spacing: 1em;
     opacity: 0;
+    &:before{
+      position: absolute;
+      top: 2.3rem;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      display: inline-block;
+      width: 0;
+      transition: 2s;
+      content: "";
+      height: 1px;
+      background-color: rgb(82, 82, 82);
+      animation: title_underline 2s ease #{$blur_anime_endtime + 3} forwards;
+    }
   }
+
 }
+
 
 
 @keyframes title_anime{
@@ -48,12 +64,18 @@ header{
     opacity: 0;
     letter-spacing: 1em;
   }
-  // 15%{
-  //   opacity: 1;
-  // }
   100%{
     letter-spacing: 0.2em;
     opacity: 1;
+  }
+}
+@keyframes title_underline{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 30%;
   }
 }
 @keyframes header_blur{
