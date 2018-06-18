@@ -1,27 +1,14 @@
-@for $count from 1 through 4{
-  @keyframes bg_fadeOut_#{$count}{
-    0%{
-      background-size: 105% auto;
-      opacity: 0;
-    }
-    @for $per from 1 through 4{
-      #{$per * 25}%{
-        @if $count <= $per {
-          opacity: 1;
-          background-size: 120% auto;
-        }@else{
-          opacity: 0;
-        }
-      }
 
-    }
+
+@keyframes bg_zoom{
+  0%{
+    background-size: 105% auto;
+  }
+
+  100%{
+    background-size: 120% auto;
   }
 }
-
-
-
-
-
 
 @keyframes title_anime{
   0%{
@@ -43,17 +30,7 @@
     width: 30%;
   }
 }
-@keyframes header_blur{
-  0%{
-    -webkit-filter: blur(0);
-    filter: blur(0);
-  }
-  100%{
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
 
-  }
-}
 @keyframes navanime_left{
   0%{
     left: 100vw;
