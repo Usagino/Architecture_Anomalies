@@ -1,17 +1,50 @@
-@keyframes bg_fadeOut{
-  0%{
-    background-size: 105% auto;
-  }
-  70%{
-    opacity: 1;
-  }
-  100%{
+@for $count from 1 through 4{
+  @keyframes bg_fadeOut_#{$count}{
+    0%{
+      background-size: 105% auto;
+      opacity: 0;
+    }
+    25%{
 
-    background-size: 120% auto;
-    opacity: 0;
+      @if $count <= 1 {
+        opacity: 1;
+        background-size: 120% auto;
+      }@else{
+        opacity: 0;
+      }
+    }
+    50%{
+      @if $count <= 2 {
+        opacity: 1;
+        background-size: 120% auto;
+      }@else{
+        opacity: 0;
+      }
+    }
+    75%{
+      @if $count <= 3 {
+        opacity: 1;
+        background-size: 120% auto;
+      }@else{
+        opacity: 0;
+      }
+    }
+    100%{
+      @if $count <= 4 {
+        opacity: 1;
+        background-size: 120% auto;
+      }@else{
+        opacity: 0;
+      }
+    }
   }
-
 }
+
+
+
+
+
+
 @keyframes title_anime{
   0%{
     opacity: 0;
@@ -21,7 +54,7 @@
     letter-spacing: 0.2em;
     opacity: 1;
   }
-  
+
 }
 @keyframes title_underline{
   0%{

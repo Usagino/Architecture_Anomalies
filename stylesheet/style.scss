@@ -2,7 +2,7 @@
 @import "_animation.scss";
 
 $fontcolor:rgb(82, 82, 82);
-$bg_fadeOut_time:10s;
+
 
 html{
   transform: translate3d(0,0,0);
@@ -20,24 +20,27 @@ header{
     filter: blur(0);
     position: absolute;
     $n:3;
-    @for $i from 1 through 3{
+
+
+    @for $i from 1 through 4{
       .slider_#{$i}{
-        animation: bg_fadeOut $bg_fadeOut_time ease #{$bg_fadeOut_time * $n} infinite;
-        $n:$n - 1;
+        animation: bg_fadeOut_#{$i} 40s ease 0s infinite;
         background-repeat: no-repeat;
-        background-size: 105% auto; //背景画像のサイズを指定。
+        background-size: 105% auto;
         background-position:50% 70%;
         width: 100vw;
         height: 100vh;
-        content: "";
         position: absolute;
         z-index: $i;
         width: 100vw;
         height: 100vh;
         background-image: url(../material/bg_image#{$i}.jpg);
+        opacity: 1;
 
       }
     }
+
+
   }
   .title{
     margin-top: calc(100vh / 2.5);
