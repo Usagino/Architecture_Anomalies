@@ -21,31 +21,15 @@ header{
     will-change: transform;
     width: 100vw;
     height: 100vh;
-    -webkit-filter: blur(0);
-    filter: blur(0);
+
+
     position: absolute;
-    $n:3;
+    background-image: url(../material/bg_image2.jpg);
+    background-repeat: no-repeat;
+    background-size: 105% auto;
+    background-position:50% 70%;
 
-
-    @for $i from 1 through 4{
-      .slider_#{$i}{
-        @include animation_smooth;
-        animation: bg_fadeOut_#{$i} 40s ease 0s infinite;
-        background-repeat: no-repeat;
-        background-size: 105% auto;
-        background-position:50% 70%;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        z-index: $i;
-        width: 100vw;
-        height: 100vh;
-        background-image: url(../material/bg_image#{$i}.jpg);
-        opacity: 1;
-
-      }
-    }
-
+    animation: bg_zoom 4s ease-in 0.3s infinite alternate;
 
   }
   .title{
