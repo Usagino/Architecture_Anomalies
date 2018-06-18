@@ -4,38 +4,16 @@
       background-size: 105% auto;
       opacity: 0;
     }
-    25%{
+    @for $per from 1 through 4{
+      #{$per * 25}%{
+        @if $count <= $per {
+          opacity: 1;
+          background-size: 120% auto;
+        }@else{
+          opacity: 0;
+        }
+      }
 
-      @if $count <= 1 {
-        opacity: 1;
-        background-size: 120% auto;
-      }@else{
-        opacity: 0;
-      }
-    }
-    50%{
-      @if $count <= 2 {
-        opacity: 1;
-        background-size: 120% auto;
-      }@else{
-        opacity: 0;
-      }
-    }
-    75%{
-      @if $count <= 3 {
-        opacity: 1;
-        background-size: 120% auto;
-      }@else{
-        opacity: 0;
-      }
-    }
-    100%{
-      @if $count <= 4 {
-        opacity: 1;
-        background-size: 120% auto;
-      }@else{
-        opacity: 0;
-      }
     }
   }
 }
