@@ -1,0 +1,105 @@
+@keyframes bg_fadeOut{
+  0%{
+    background-size: 105% auto;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+
+    background-size: 120% auto;
+    opacity: 0;
+  }
+
+}
+@keyframes title_anime{
+  0%{
+    opacity: 0;
+    letter-spacing: 1em;
+  }
+  100%{
+    letter-spacing: 0.2em;
+    opacity: 1;
+  }
+  
+}
+@keyframes title_underline{
+  0%{
+    width: 0;
+  }
+
+  100%{
+    width: 30%;
+  }
+}
+@keyframes header_blur{
+  0%{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+  100%{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+
+  }
+}
+@keyframes navanime_left{
+  0%{
+    left: 100vw;
+  }
+  45%{
+    left: 0vw;
+  }
+  55%{
+    left: 0vw;
+  }
+  100%{
+    left: -100vw;
+  }
+}
+@keyframes navopacty{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+$sizelist: 1070.35, 1448, 811, 1070.35, 1183;
+$tran_how_many_time:1;
+@each $size in $sizelist{
+  @keyframes trans_#{$tran_how_many_time}_up{
+    0%{
+      top: 100vh;
+    }
+    100%{
+      top: calc(-#{$size}px + (#{$size}px - 100vh)* -1);
+    }
+  }
+  @keyframes trans_#{$tran_how_many_time}_down{
+    0%{
+      top: calc(-#{$size}px + (#{$size}px - 100vh)* -1);
+    }
+    100%{
+      top: 100vh;
+    }
+  }
+  @-webkit-keyframes trans_#{$tran_how_many_time}_up{
+    0%{
+      top: 100vh;
+    }
+    100%{
+      top: calc(-#{$size}px + (#{$size}px - 100vh)* -1);
+    }
+  }
+  @-webkit-keyframes trans_#{$tran_how_many_time}_down{
+    0%{
+      top: calc(-#{$size}px + (#{$size}px - 100vh)* -1);
+    }
+    100%{
+      top: 100vh;
+    }
+  }
+  $tran_how_many_time:$tran_how_many_time + 1;
+}
