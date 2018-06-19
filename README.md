@@ -5,8 +5,10 @@ under construction
 ---
 ## Assignment
 
-Hello, I'm yuki
+Hello, I'm yuki.
+
 This is kawaguchi's assignment.
+
 The problem which remodels a site of an exhibition.
 
 
