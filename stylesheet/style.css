@@ -3,7 +3,7 @@
     background-size: 105% auto;
   }
   100% {
-    background-size: 120% auto;
+    background-size: 110% auto;
   }
 }
 
@@ -309,10 +309,41 @@ header .navwrap nav ul {
   text-align: center;
 }
 
+header .navwrap nav .hover_ber {
+  content: "";
+  position: absolute;
+  height: 4em;
+  width: 95vw;
+}
+
 header .navwrap nav li {
   font-size: 25px;
   display: inline-block;
   margin: 13px 30px;
+}
+
+header .navwrap nav li:nth-child(0) a:hover ~ .hover_ber {
+  background-color: red;
+}
+
+header .navwrap nav li:nth-child(1) a:hover ~ .hover_ber {
+  background-color: red;
+}
+
+header .navwrap nav li:nth-child(2) a:hover ~ .hover_ber {
+  background-color: red;
+}
+
+header .navwrap nav li:nth-child(3) a:hover ~ .hover_ber {
+  background-color: red;
+}
+
+header .navwrap nav li:nth-child(4) a:hover ~ .hover_ber {
+  background-color: red;
+}
+
+header .navwrap nav li:nth-child(5) a:hover ~ .hover_ber {
+  background-color: red;
 }
 
 header .navwrap nav li a {

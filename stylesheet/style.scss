@@ -84,15 +84,23 @@ header{
       ul{
         text-align: center;
       }
+      .hover_ber{
+        content: "";
+        position: absolute;
+        height: 4em;
+        width: 95vw;
+      }
       li{
         font-size: 25px;
         display: inline-block;
         margin: 13px 30px;
+        @for $nth from 0 through 5{
+          &:nth-child(#{$nth}) a:hover ~ .hover_ber{
+            background-color: red;
+          }
+        }
         a{
           color: $fontcolor;
-          &:hover{
-
-          }
         }
       }
     }
