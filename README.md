@@ -1,11 +1,4 @@
-<style>
-.link{
-  box-shadow: 0 2px 5px rgba(0,0,0,0.26)
-}
-.link:hover{
-  box-shadow: none;
-}
-</style>
+
 # ArchitectureAnomalies
 under construction
 
