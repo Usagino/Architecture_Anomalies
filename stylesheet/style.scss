@@ -4,8 +4,6 @@
   transform: rotate(0.0001deg);
   outline: 1px solid transparent;
 }
-
-
 $fontcolor:rgb(82, 82, 82);
 
 
@@ -29,8 +27,7 @@ header{
     background-size: 105% auto;
     background-position:50% 70%;
 
-    animation: bg_zoom 4s ease-in 0.3s infinite alternate;
-
+    animation: bg_zoom 8s ease-in 0.3s infinite alternate;
   }
   .title{
     margin-top: calc(100vh / 2.5);

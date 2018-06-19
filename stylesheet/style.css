@@ -249,7 +249,7 @@ header #header {
   background-repeat: no-repeat;
   background-size: 105% auto;
   background-position: 50% 70%;
-  animation: bg_zoom 4s ease-in 0.3s infinite alternate;
+  animation: bg_zoom 8s ease-in 0.3s infinite alternate;
 }
 
 header .title {
