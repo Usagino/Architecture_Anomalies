@@ -19,6 +19,8 @@ header{
     will-change: transform;
     width: 100vw;
     height: 100vh;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 
 
     position: absolute;
@@ -27,7 +29,7 @@ header{
     background-size: 105% auto;
     background-position:50% 70%;
 
-    animation: bg_zoom 8s ease-in 0.3s infinite alternate;
+    animation: bg_zoom 4s ease-in 0.3s infinite alternate;
   }
   .title{
     margin-top: calc(100vh / 2.5);
@@ -63,7 +65,7 @@ header{
       height: 1px;
       background-color: $fontcolor;
       @include animation_smooth;
-      animation: title_underline 2s ease #{$blur_anime_endtime + 3} forwards;
+      animation: title_underline 1s ease #{$blur_anime_endtime + 3} forwards;
     }
   }
   .navwrap{
@@ -76,7 +78,7 @@ header{
     left: 0;
     opacity: 0;
     @include animation_smooth;
-    animation: navopacty 0.1s ease #{$blur_anime_endtime + 5.8} forwards;
+    animation: navopacty 0.1s ease #{$blur_anime_endtime + 5} forwards;
     nav{
       ul{
         text-align: center;
@@ -104,7 +106,7 @@ header{
   }
   .navber{
     @include animation_smooth;
-    animation: navanime_left 4s  ease #{$blur_anime_endtime + 4} forwards;
+    animation: navanime_left 2s  ease #{$blur_anime_endtime + 4} forwards;
     position: absolute;
     content: "";
     z-index: 5;

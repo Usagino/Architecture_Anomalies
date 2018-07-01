@@ -3,7 +3,7 @@
     background-size: 105% auto;
   }
   100% {
-    background-size: 110% auto;
+    background-size: 108% auto;
   }
 }
 
@@ -244,12 +244,14 @@ header #header {
   will-change: transform;
   width: 100vw;
   height: 100vh;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   position: absolute;
   background-image: url(../material/bg_image2.jpg);
   background-repeat: no-repeat;
   background-size: 105% auto;
   background-position: 50% 70%;
-  animation: bg_zoom 8s ease-in 0.3s infinite alternate;
+  animation: bg_zoom 4s ease-in 0.3s infinite alternate;
 }
 
 header .title {
@@ -288,7 +290,7 @@ header .title:before {
   background-color: #525252;
   transform: rotate(0.0001deg);
   outline: 1px solid transparent;
-  animation: title_underline 2s ease 4.5s forwards;
+  animation: title_underline 1s ease 4.5s forwards;
 }
 
 header .navwrap {
@@ -302,7 +304,7 @@ header .navwrap {
   opacity: 0;
   transform: rotate(0.0001deg);
   outline: 1px solid transparent;
-  animation: navopacty 0.1s ease 7.3s forwards;
+  animation: navopacty 0.1s ease 6.5s forwards;
 }
 
 header .navwrap nav ul {
@@ -353,7 +355,7 @@ header .navwrap nav li a {
 header .navber {
   transform: rotate(0.0001deg);
   outline: 1px solid transparent;
-  animation: navanime_left 4s ease 5.5s forwards;
+  animation: navanime_left 2s ease 5.5s forwards;
   position: absolute;
   content: "";
   z-index: 5;

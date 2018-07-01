@@ -11,7 +11,7 @@ This is kawaguchi's assignment.
 
 The problem which remodels a site of an exhibition.
 
-
+https://usagino.github.io/Architecture_Anomalies.github.io/
 <a class="link" href="https://usagino.github.io/Architecture_Anomalies.github.io/" target="_blank">![](https://i.imgur.com/VmlqH21.jpg)</a>
 
 Language, software, service used
